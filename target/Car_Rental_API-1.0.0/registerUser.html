@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User</title>
+    <link rel="stylesheet" href="assets/css/user.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/normalize/normalize.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-black" style="position: relative">
+
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Car Rental System</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="guestUser.html">User</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Vehicle</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="driver.html">Driver</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Rent</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Reservation</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <button class="btn btn-success" type="submit"><a href="index.html"
+                                                                 style="text-decoration: none; color: white">Log Out</a>
+                </button>
+            </form>
+        </div>
+    </div>
+</nav>
+<section class="container-fluid">
+
+    <section class="row mt-2">
+        <div class="col-10 col-lg-5 px-0" id="id" style="">
+            <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleCaptions">
+                <div class="carousel-indicators">
+                    <button aria-current="true" aria-label="Slide 1" class="active" data-bs-slide-to="0"
+                            data-bs-target="#carouselExampleCaptions" type="button"></button>
+                    <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleCaptions"
+                            type="button"></button>
+                    <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleCaptions"
+                            type="button"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img alt="Error loading image" class="d-block w-100"
+                             src="assets/images/car-rental/customer/Carrental02.jpg">
+                    </div>
+                    <div class="carousel-item">
+                        <img alt="Error loading image" class="d-block w-100"
+                             src="assets/images/car-rental/customer/images845-60c0f446763de.jpg">
+                    </div>
+                    <div class="carousel-item">
+                        <img alt="Error loading image" class="d-block w-100"
+                             src="assets/images/car-rental/customer/images.jfif">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleCaptions"
+                        type="button">
+                    <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleCaptions"
+                        type="button">
+                    <span aria-hidden="true" class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <h1 class="new"><u>User Form</u></h1>
+    <form action="">
+        <div class="mb-3">
+            <form class="d-flex">
+                <h2 class="position-absolute" style="font-family: Ubuntu, sans-serif; top: 13vh; color: red">Search
+                    User</h2>
+                <input class="form-control me-2" type="search" id="txtId" placeholder="Search User" aria-label="Search">
+                <button class="btn btn-primary button" style="" type="submit">Search User</button>
+
+                <label for="txtUserId" class="position-absolute label">User Id</label>
+                <input type="text" class="form-control position-absolute" id="txtUserId" style=""
+                       aria-describedby="emailHelp" placeholder="Enter user id">
+
+                <label for="txtUserName" class="position-absolute label1">User Name</label>
+                <input type="text" class="form-control position-absolute" id="txtUserName" style=""
+                       aria-describedby="emailHelp" placeholder="Enter user name">
+
+                <label for="txtUserNic" class="position-absolute label4">User NIC</label>
+                <input type="text" class="form-control position-absolute" id="txtUserNic" style=""
+                       aria-describedby="emailHelp" placeholder="Enter user nic">
+
+                <label for="txtUserAddress" class="position-absolute label2">User Address</label>
+                <input type="text" class="form-control position-absolute" id="txtUserAddress" style=""
+                       aria-describedby="emailHelp" placeholder="Enter user address">
+
+                <label for="txtUserContact" class="position-absolute label3">User Contact</label>
+                <input type="text" class="form-control position-absolute" id="txtUserContact" style=""
+                       aria-describedby="emailHelp" placeholder="Enter user contact">
+
+                <label for="txtUserEmail" class="position-absolute label5">User Email</label>
+                <input type="text" class="form-control position-absolute" id="txtUserEmail" style=""
+                       aria-describedby="emailHelp" placeholder="Enter user contact">
+
+                <button type="button" class="btn btn-success position-absolute" id="save">Save</button>
+                <button type="button" class="btn btn-primary position-absolute" id="update">Update</button>
+                <button type="button" class="btn btn-warning position-absolute" id="loadAll">Load All</button>
+                <button type="button" class="btn btn-danger position-absolute" id="delete">Delete</button>
+
+                <table class="table position-absolute table-primary text-center table-bordered" id="table">
+                    <thead>
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Nic</th>
+                        <th scope="col">Address</th>
+                        <th scope="col">Contact</th>
+                        <th scope="col">Email</th>
+                    </tr>
+                    </thead>
+                    <tbody id="userTable">
+
+                    </tbody>
+                </table>
+
+            </form>
+        </div>
+    </form>
+</section>
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script>
+    var baseURL = "http://localhost:8080/Car_Rental_API_war/register";
+
+    $("#id").click(function () {
+        searchUser();
+    })
+
+    $("#save").click(function () {
+        saveUser();
+    })
+
+    $("#loadAll").click(function () {
+        loadAllUser();
+    })
+
+    $("#update").click(function () {
+        updateUser();
+    })
+
+    $("#delete").click(function () {
+        deleteUser()
+    })
+
+    function searchUser() {
+        var userId = $("#txtUserId").val();
+
+        $.ajax({
+            url: baseURL + "/" + userId,
+            method: "GET",
+            success: function (res) {
+                if (res.code == 200) {
+                    var registerUser = res.data;
+                    $("#txtUserId").val(registerUser.id);
+                    $("#txtUserName").val(registerUser.name);
+                    $("#txtUserNic").val(registerUser.nic);
+                    $("#txtUserAddress").val(registerUser.address);
+                    $("#txtUserContact").val(registerUser.contact);
+                    $("#txtUserEmail").val(registerUser.email);
+                } else {
+                    clearForm();
+                }
+            },
+            error: function (ob) {
+                alert(ob.responseJSON.message);
+            }
+        });
+    }
+
+    function deleteUser() {
+        let userId = $("#txtUserId").val();
+
+        $.ajax({
+            url: baseURL + "?id=" + userId,
+            method: "DELETE",
+            success: function (res) {
+                if (res.code == 200) {
+                    alert("Customer Successfully Deleted");
+                    loadAllDriver();
+                    clearForm();
+                }
+            },
+            error: function (ob) {
+                alert(ob.responseJSON.message);
+            }
+        });
+    }
+
+    function updateUser() {
+        var userOb = {
+            id: $("#txtUserId").val(),
+            name: $("#txtUserName").val(),
+            Nic: $("#txtUserNic").val(),
+            address: $("#txtUserAddress").val(),
+            passengers: $("#txtUserContact").val(),
+            email: $("#txtUserEmail").val()
+        }
+
+        $.ajax({
+            url: baseURL,
+            method: "PUT",
+            contentType: "application/json",
+            data: JSON.stringify(userOb),
+            success: function (res) {
+                if (res.code == 200) {
+                    alert("Successfully Updated");
+                    loadAllUser();
+                    clearForm();
+                }
+            },
+            error: function (ob) {
+                alert(ob.responseJSON.message);
+            }
+        });
+    }
+
+    function loadAllUser() {
+        $("#userTable").empty();
+        $.ajax({
+            url: baseURL,
+            method: "GET",
+            success: function (resp) {
+                for (const registerUser of resp.data) {
+                    let row = `<tr><td>${registerUser.id}</td><td>${registerUser.name}</td><td>${registerUser.nic}</td><td>${registerUser.address}</td><td>${registerUser.contact}</td><td>${registerUser.email}</td></tr>`;
+                    $("#vehicleTable").append(row);
+                }
+                bindClickEvents();
+                clearForm();
+            },
+            error: function (ob) {
+                alert(ob.responseJSON.message);
+            }
+        });
+    }
+
+    function saveUser() {
+        var data = $("#userTable").serialize();
+        $.ajax({
+            url: baseURL,
+            method: "POST",
+            data: data,
+            success: function (res) {
+                if (res.code == 200) {
+                    alert("Success");
+                    loadAllUser();
+                    clearForm();
+                }
+            },
+            error: function (ob) {
+                alert(ob.responseJSON.message);
+            }
+        });
+
+        function clearForm() {
+            $("#txtUserId").val("");
+            $("#txtUserName").val("");
+            $("#txtUserNic").val("");
+            $("#txtUserAddress").val("");
+            $("#txtUserContact").val("");
+            $("#txtUserEmail").val("");
+        }
+    }
+</script>
+</body>
+</html>
